@@ -3,8 +3,10 @@ public class ShortSubstr {
 
 	public static void main(String[] args) throws Exception {
 		ShortSubstr str = new ShortSubstr();
-		String word = "banacnac";
-		System.out.println(str.shortestSubstring(word));
+		for (String valueString : args) {
+			System.out.println(str.shortestSubstring(valueString));
+			
+		}
 	}
 
 	static int maxDistinctChar(String word, int n) {
